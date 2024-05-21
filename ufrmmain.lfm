@@ -1,25 +1,24 @@
 object frmMain: TfrmMain
-  Left = 3988
-  Height = 72
+  Left = 3398
+  Height = 54
   Top = 1844
-  Width = 320
+  Width = 240
   BorderStyle = bsSingle
   Caption = 'Timer'
-  ClientHeight = 72
-  ClientWidth = 320
-  DesignTimePPI = 128
+  ClientHeight = 54
+  ClientWidth = 240
   FormStyle = fsSystemStayOnTop
   OnCreate = FormCreate
   Position = poDefault
   ShowInTaskBar = stNever
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '3.2.0.0'
   object lbHours: TLabel
-    Left = 16
-    Height = 49
-    Top = 8
-    Width = 48
+    Left = 12
+    Height = 36
+    Top = 6
+    Width = 36
     Caption = '00'
-    Font.Height = -43
+    Font.Height = -32
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentColor = False
@@ -28,24 +27,24 @@ object frmMain: TfrmMain
     OnMouseWheelUp = lbHoursMouseWheelUp
   end
   object lbSep1: TLabel
-    Left = 72
-    Height = 49
-    Top = 8
-    Width = 14
+    Left = 54
+    Height = 36
+    Top = 6
+    Width = 11
     Caption = ':'
-    Font.Height = -43
+    Font.Height = -32
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
   end
   object lbMinutes: TLabel
-    Left = 96
-    Height = 49
-    Top = 8
-    Width = 48
+    Left = 72
+    Height = 36
+    Top = 6
+    Width = 36
     Caption = '00'
-    Font.Height = -43
+    Font.Height = -32
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentColor = False
@@ -54,24 +53,24 @@ object frmMain: TfrmMain
     OnMouseWheelUp = lbMinutesMouseWheelUp
   end
   object lbSep2: TLabel
-    Left = 152
-    Height = 49
-    Top = 8
-    Width = 14
+    Left = 114
+    Height = 36
+    Top = 6
+    Width = 11
     Caption = ':'
-    Font.Height = -43
+    Font.Height = -32
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
   end
   object lbSeconds: TLabel
-    Left = 176
-    Height = 49
-    Top = 8
-    Width = 48
+    Left = 132
+    Height = 36
+    Top = 6
+    Width = 36
     Caption = '00'
-    Font.Height = -43
+    Font.Height = -32
     Font.Name = 'Arial'
     Font.Style = [fsBold]
     ParentColor = False
@@ -80,22 +79,22 @@ object frmMain: TfrmMain
     OnMouseWheelUp = lbSecondsMouseWheelUp
   end
   object btnStart: TSpeedButton
-    Left = 280
-    Height = 29
+    Left = 210
+    Height = 22
     Hint = 'Start / Stop'
-    Top = 16
-    Width = 31
+    Top = 12
+    Width = 23
     Caption = 'S'
     OnClick = btnStartClick
     ShowHint = True
     ParentShowHint = False
   end
   object btnReset: TSpeedButton
-    Left = 248
-    Height = 29
+    Left = 186
+    Height = 22
     Hint = 'Reset'
-    Top = 16
-    Width = 31
+    Top = 12
+    Width = 23
     Caption = 'R'
     OnClick = btnResetClick
     ShowHint = True
@@ -103,7 +102,7 @@ object frmMain: TfrmMain
   end
   object tmrTick: TTimer
     OnTimer = tmrTickTimer
-    Left = 64
-    Top = 8
+    Left = 48
+    Top = 6
   end
 end
